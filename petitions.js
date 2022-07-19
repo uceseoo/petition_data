@@ -52,7 +52,7 @@ var processMany = function(petitions,callback) {
             'signatures_by_constituency': response.data.attributes.signatures_by_constituency,
             'signature_count': response.data.attributes.signature_count,
 			'created_at': response.data.attributes.created_at,
-            'name': response.data.attributes.departments.name,
+            'departments': response.data.attributes.departments,
             'topics': response.data.attributes.topics}
           );
       }
